@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hwt.ronghub.mapper.StrategyMapper">
+
+    <select id="selectStrategy" resultType="com.hwt.ronghub.dto.StrategyListDto">
+        SELECT
+            str.strategyId,
+            str.userId,
+            str.title,
+            str.content,
+            str.publishTime,
+            str.image,
+            str.scenicId,
+            str.VIEW,
+            str.audit,
+            u.username,
+            s.NAME
+        FROM
+            strategy str
+                LEFT JOIN USER u ON str.userId = u.userId
+                LEFT JOIN scenic s ON str.scenicId = s.scenicId
+        where 1 = 1
+        <if test="publishTime != null">
+            and str.publishTime like concat('%', #{publishTime}, '%')
+        </if>
+        <if test="audit > 0">
+            and str.audit = #{audit}
+        </if>
+    </select>
+
+</mapper>
