@@ -4,7 +4,10 @@
 ### 一、项目介绍
 
 自主设计开发的基于SpringBoot+Vue+微信小程序的旅游社交小程序（带后台），可以无缝修改为本地级市的旅游平台，整合了各类技术，适合新手练习。
-小程序地址：[小程序地址](https://gitee.com/hwtzzz06/rong-hub)
+
+### 小程序地址：
+
+[小程序地址](https://gitee.com/hwtzzz06/rong-hub)
 
 ### 二、功能描述：
 
