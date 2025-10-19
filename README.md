@@ -7,7 +7,7 @@
 
 ### 小程序地址：
 
-[小程序地址](https://gitee.com/hwtzzz06/rong-hub)
+[小程序地址](https://github.com/hwtzzz/rong-hub)
 
 ### 二、功能描述：
 
