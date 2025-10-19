@@ -1,4 +1,3 @@
-### RongHub
 ### SpringBoot+Vue+微信小程序 旅游社交小程序后台
 
 ### 一、项目介绍
